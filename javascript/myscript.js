@@ -15,14 +15,14 @@ let cognomeUtente = listaCognomi.push(cognome.toUpperCase());
 
 listaCognomi.sort();
 
-let index = 1;
+let index = 0;
 
 for (let i = 0; i < listaCognomi.length; i++){
 
-    index = index + i;
+    index = index + 1;
 
     index + listaCognomi[i];
-    
+
     console.log(index + listaCognomi[i])
 
 }
