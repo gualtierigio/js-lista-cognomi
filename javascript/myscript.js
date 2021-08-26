@@ -11,11 +11,9 @@ const listaCognomi = ["Bianchi", "Rossi", "Neri", "Verdi", "Gialli"];
 
 const cognome = prompt("inserisci il tuo cognome");
 
-String.prototype.capitalize = function() {
-    return this.charAt(0).toUpperCase() + this.slice(1);
-}
+const cognomeDefinitivo = cognome.charAt(0).toUpperCase() + cognome.slice(1);
 
-const cognomeUtente = listaCognomi.push(cognome.capitalize());
+const cognomeUtente = listaCognomi.push(cognomeDefinitivo);
 
 listaCognomi.sort();
 
