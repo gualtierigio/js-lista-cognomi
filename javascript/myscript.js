@@ -6,3 +6,8 @@
  * scrivi anche la posizione "umana" (partendo da 1) della lista in cui il nuovo utente si trova
  * 
  */
+
+let listaCognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"]
+
+let cognomeUtente = listaCognomi.push(prompt("inserisci il tuo cognome"))
+
