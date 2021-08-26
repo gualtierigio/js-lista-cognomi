@@ -7,7 +7,14 @@
  * 
  */
 
-let listaCognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"]
+let listaCognomi = ["Bianchi", "Rossi", "Neri", "Verdi", "Gialli"]
 
 let cognomeUtente = listaCognomi.push(prompt("inserisci il tuo cognome"))
 
+for (let i = 1; i < listaCognomi.length; i++){
+
+    cognomeCorrente = listaCognomi[i];
+
+}
+
+console.log(listaCognomi.sort())
