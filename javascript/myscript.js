@@ -7,14 +7,24 @@
  * 
  */
 
-let listaCognomi = ["Bianchi", "Rossi", "Neri", "Verdi", "Gialli"]
+let listaCognomi = ["Bianchi", "Rossi", "Neri", "Verdi", "Gialli"];
 
-let cognomeUtente = listaCognomi.push(prompt("inserisci il tuo cognome"))
+let cognome = prompt("inserisci il tuo cognome");
 
-for (let i = 1; i < listaCognomi.length; i++){
+let cognomeUtente = listaCognomi.push(cognome.toUpperCase());
 
-    cognomeCorrente = listaCognomi[i];
+listaCognomi.sort();
+
+let index = 1;
+
+for (let i = 0; i < listaCognomi.length; i++){
+
+    index = index + i;
+
+    index + listaCognomi[i];
+    
+    console.log(index + listaCognomi[i])
 
 }
 
-console.log(listaCognomi.sort())
+
