@@ -7,11 +7,15 @@
  * 
  */
 
-let listaCognomi = ["Bianchi", "Rossi", "Neri", "Verdi", "Gialli"];
+const listaCognomi = ["Bianchi", "Rossi", "Neri", "Verdi", "Gialli"];
 
-let cognome = prompt("inserisci il tuo cognome");
+const cognome = prompt("inserisci il tuo cognome");
 
-let cognomeUtente = listaCognomi.push(cognome.toUpperCase());
+String.prototype.capitalize = function() {
+    return this.charAt(0).toUpperCase() + this.slice(1);
+}
+
+const cognomeUtente = listaCognomi.push(cognome.capitalize());
 
 listaCognomi.sort();
 
